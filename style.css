@@ -203,34 +203,15 @@ body {
   align-items: center;
 }
 
-.dia {
-  margin-left: 4rem;
-  margin-right: 2.5rem;
-  height: 10rem;
-  padding: 1rem 1rem 1rem 1rem;
-  border: 1px solid black;
-  border-radius: 5rem;
-  background-color: var(--secondary-color);
-  z-index: 2;
-}
-
-.dia1 {
-  margin-left: 4rem;
-  margin-right: 2.5rem;
-  height: 10rem;
-  padding: 1rem 1rem 1rem 1rem;
-  border: 1px solid black;
-  border-radius: 5rem;
-  background-color: var(--secondary-color);
-  position: relative;
-  margin-top: 5rem;
-  z-index: 2;
-}
-
 .dic {
-  margin-top: 1rem;
   display: flex;
-  overflow-x: hidden;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  height: 20rem;
+}
+
+.dic::-webkit-scrollbar {
+  display: none;
 }
 
 .ls {
@@ -385,6 +366,12 @@ body {
 
 .ali {
   height: 4rem;
+  transition: height 0.3s ease-in;
+}
+
+.ali:hover {
+  cursor: pointer;
+  height: 4.3rem;
 }
 
 .alic {
@@ -452,4 +439,53 @@ body {
   bottom: 2rem;
   position: relative;
   margin-left: 7rem;
+}
+
+.daal {
+  width: 100vw;
+  height: 3rem;
+}
+
+.jam {
+  height: 1rem;
+  background-color: brown;
+  width: 10px;
+  margin-left: calc(50% - 5px);
+}
+
+.jam1 {
+  height: 7rem;
+  background-color: brown;
+  width: 10px;
+  margin-left: calc(50% - 5px);
+}
+
+.dia {
+  height: 10rem;
+  padding: 1rem 1rem 1rem 1rem;
+  border: 1px solid black;
+  border-radius: 5rem;
+  background-color: var(--secondary-color);
+  position: relative;
+  z-index: 2;
+}
+
+.mt {
+  margin-left: 4rem;
+  margin-right: 2.5rem;
+  height: 10rem;
+  border-radius: 5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.mt1 {
+  margin-left: 4rem;
+  margin-right: 2.5rem;
+  height: 10rem;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 5rem;
+  margin-top: 5rem;
+  position: relative;
+  z-index: 2;
 }
